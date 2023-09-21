@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/sobrancelha.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>BrunaStudio</title>
+</head>
+<body>
+    <section class="sessao-orcamento">
+    
+        <div class="orcamento-wrapper">
+            <h1>Faça um orçamento</h1>
+            <form>
+                <label for="qtde">Escolha a quantidade de procedimentos</label>
+                <input type="number" min="1" name="qtde" id="qtde" onclick="atualizarPreco()">
+                <label for="js">Preciso de um orçamento</label>
+                <input type="checkbox" name="js" id="js">
+                <label>Procedimento</label>
+                <div class="group-layout">
+                    <div>
+                        <input type="radio" name="layout" id="layout-sim">
+                        <label for="layout-sim">Técnica Microblading: Fio a Fio</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="layout" id="layout-nao">
+                        <label for="layout-nao">Técnica: Shadow Line</label>
+                    </div>
+                </div>
+                  <label for="prazo">Prazo</label>
+                  <input type="range" name="prazo" id="prazo" min="1" max="10">
+                  <label id="preco">R$ 0,00</label>
+                   
+                  <button class="btn-btn-orcamento" type="submit" onclick="enviar2()">Enviar</button>
+                  <div id="resu"></div>
+            </form>
+           </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>

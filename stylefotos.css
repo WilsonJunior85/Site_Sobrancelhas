@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;1,200;1,300&family=Mulish:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+
+
+
+
+
+:root {
+--font-primary: "Baloo Da 20", serif;  /* Criando variaveis, fontes primarias */
+--font-secundary: "Josefin Slab", serif;  /* Criando variaveis, fontes secundarias */
+--font-action: "Mulish", serif; /* Criando variaveis,fonte de ação que vai ser usada nos links, nos botões, tudo que for uma ação iremos ultilizar*/
+}
+
+body{
+    font-family: var(--font-primary);
+    background: url("imagens/fotofundo.jpg"); /* Foto do Background */
+    background-size: 100%, 50%, contain, 3rem;  /* Tamanho do Background */
+    }
+
+h1 {
+font-family: var(--font-primary);    
+text-align: center;
+color: white;
+background: #ef32d9; 
+background: -webkit-linear-gradient(to right, #ef32d9, #89fffd); 
+background: linear-gradient(to right, #ef32d9, #89fffd); 
+height: 3rem;
+
+}
+
+.titulo h1{
+margin-bottom: .5rem;
+font-size: 250%;
+font-family: var(--font-primary);   
+
+}
+
+.galeria{
+margin: 10px 50px;
+
+}
+
+.galeria img{
+    transform: translateY(5rem) rotateY(-30deg);
+    height: 200px;
+    width: 200px;
+    filter: grayscale(100%); /* Deixa preto e branco */
+    transition: 1s;
+}
+
+.galeria img:hover{
+    
+    filter: grayscale(0); /* quando clicar deixa colorido */
+    transform:scale(1.1) ;
+     
+}

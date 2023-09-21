@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="video.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/sobrancelha.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>BrunaStudio</title>
+</head>
+<body>
+    <section>
+        <video controls id="slider" autoplay muted loop>
+        <source src="./video/Bruu.mp4" type="video/mp4">
+        </video>
+        <ul class="navigation">
+         <li onclick="videoUrl('videos/Bruu.mp4')"><img src="imagens/testevideo1.jpg"></li>
+         <li onclick="videoUrl('video/video2.mp4')"><img src="imagens/teste2.jpg"></li>
+         <li onclick="videoUrl('videos/video3.mp4')"><img src="imagens/teste3.jpg"></li>
+         <li onclick="videoUrl('videos/video4.mp4')"><img src="imagens/teste4.jpg"></li>
+
+        </ul>
+    </section>
+    <script type="text/javascript">
+    function videoUrl(hmmmmmm){
+    document.querySelector("#slider").src = hmmmmmm;
+
+    }
+    </script>
+
+</body>
+
+
+<script src="script.js"></script>
+
+
+</html>

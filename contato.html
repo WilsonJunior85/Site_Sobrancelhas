@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/sobrancelha.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>BrunaStudio</title>
+</head>
+<body>
+    <section class="sessao-contato">
+        <div class="contato-wrapper">
+        <div class="contato-left">
+        
+        </div>
+        <div class="contato-right">
+            <h1>Contato</h1>
+            <form>
+             <div class="input-group"> 
+             <input type="text" class="field" id="nome">
+             <label for="nome" class="field-label">Nome</label>
+            </div> 
+        <div class="input-group">
+            <input type="text" class="field" id="email">
+            <label for="email" class="field-label">E-mail</label>
+        </div>
+        <div class="input-group">
+            <textarea class="field" id="mensagem"></textarea>
+            <label for="mensagem" class="field-label">Mensagem</label>
+        </div>
+        <button class="enviar" onclick="Enviar()">Enviar</button>
+        <div id="res"></div>
+            </form>
+        </div>
+        </div>
+        </section>
+</body>
+<script src="script.js"></script>
+</html>
